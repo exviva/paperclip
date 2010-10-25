@@ -15,7 +15,6 @@ module Paperclip
       @name = name
       @attachment = attachment
       if definition.is_a? Hash
-        definition = definition.dup
         @geometry = definition.delete(:geometry)
         @format = definition.delete(:format)
         @processors = definition.delete(:processors)
